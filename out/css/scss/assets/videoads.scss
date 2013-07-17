@@ -1,0 +1,46 @@
+/**
+*** VideoAds.js - HTML5 & JavaScript Video Adventisment plugin for MediaElements.js
+*** Author: Kamil Czujowski (https://twitter.com/kamilczujowski), Sergej Müller (http://wpcoder.de)
+*** Version: 1.0
+*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+**/
+body {
+
+     /* default setting (video box)*/
+    .mejs-container{
+        margin: auto;
+        position: relative;
+    }
+    
+    /* default setting (advertisment box) */
+    .ads {
+        display: none; /* hide all advertisments */
+        position: absolute;
+        
+        /* default setting (close button) */
+        #close {
+            background-size: 100%;
+            background-image: url('../media/img/close.png?15');
+            width: 15px;
+            height: 15px;
+
+            display: block;
+            text-indent: -99999px;
+            
+            position: absolute;
+            top: -20px;
+            right: -25px;
+
+            cursor: pointer;
+        }
+
+        /* Optim for Retina */
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+            #close {
+                background-image: url('../media/img/close@2x.png');
+            }
+        }
+
+    }
+
+}

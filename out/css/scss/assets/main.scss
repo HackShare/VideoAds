@@ -1,0 +1,226 @@
+/**
+*** VideoAds.js - HTML5 & JavaScript Video Adventisment plugin for MediaElements.js
+*** Author: Kamil Czujowski (https://twitter.com/kamilczujowski), Sergej Müller (http://wpcoder.de)
+*** Version: 1.0
+*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+**/
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    background-color: #1e3141;
+    
+    font-family: 'Open Sans', Helvetica Neue, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* @group Mixins */
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition ($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+/* @end */
+
+/* @group Default */
+a {
+    text-decoration: none;
+    @include transition (color, 0.3s, ease-in-out);
+
+    &:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #1aa5a7;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    color: #fff;
+}
+
+ p {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+
+    color: #fff;
+}
+
+hr {
+    width: 50px;
+    height: 1px;
+    background-color: #eaeaea;
+
+    margin: 0 auto 25px auto;
+}
+.gplus{
+    margin-left: 25px;
+    display: inline-block;
+}
+/* @end */
+/* @group Buttons */
+.btn {
+    width: 290px;
+    height: 50px;
+
+    display: inline-block;
+    line-height: 50px;
+
+    font-weight: 400;
+    color: #fff;
+
+    @include radius(2px);
+    @include transition (opacity, 0.3s, ease-in-out);
+
+    &:hover {
+        opacity: .7;
+        text-decoration: none;
+    }
+}
+
+.git {
+    background-color: #f6f6f6;
+    color: #333;
+
+    &:before {
+        content: '';
+        background-size: 100%;
+        background-image: url('../media/ico/git.png');
+
+        display: inline-block;
+
+        width: 25px;
+        height: 25px;
+        
+        position: relative;
+        top: 6px;
+
+        margin: 0 15px 0 0;
+    }
+
+    &:hover {
+        color: #333;
+    }
+
+}
+
+.zip {
+    background-color: #19a2a5;
+
+    &:before {
+        content: '';
+        background-size: 100%;
+        background-image: url('../media/ico/download.png');
+
+        display: inline-block;
+
+        width: 25px;
+        height: 25px;
+        
+        position: relative;
+        top: 6px;
+
+        margin: 0 15px 0 0;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+/* @end */
+
+/* @group Retina optim */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .git {
+        &:before {
+            content: '';
+            display: inline-block;
+
+            background-image: url('../media/ico/git@2x.png');
+        }
+    }
+
+    .zip {
+        &:before {
+            content: '';
+            display: inline-block;
+            
+            background-image: url('../media/ico/download@2x.png');
+        }
+    }
+}
+/* @end */
+/* @group Main */
+body {
+    width: 960px;
+    margin: 0 auto;
+
+    header {
+       margin: 25px auto;
+
+       text-align: center;
+
+       color: #fff;
+
+       a {
+            color: #fff;
+            font-weight: 400;
+
+            margin: 0 20px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+       }
+
+       figure {
+            margin: 25px 0 0 0;
+       }
+
+    }
+
+    section {
+        color: #fff;
+        margin: 50px 0;
+
+        position: relative;
+
+        a {
+            color: #1aa5a7;
+        }
+    }
+
+    footer {
+
+        a {
+            color: #1aa5a7;
+        }
+
+    }
+
+}
+/* @end */

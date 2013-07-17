@@ -1,0 +1,232 @@
+.mejs-container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.mejs-container-fullscreen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.mejs-container-fullscreen .mejs-mediaelement,
+.mejs-container-fullscreen video {
+	width: 100%;
+	height: 100%;
+}
+
+/* Start: LAYERS */
+.mejs-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mejs-mediaelement {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+.mejs-overlay-play {
+	cursor: pointer;
+}
+
+.mejs-overlay-button {
+	background-size: 100%;
+	background-image: url('../media/img/play.png');
+	display: block;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 99px;
+	margin: -45px 0 0 -50px;
+}
+
+/* End: LAYERS */
+
+/* Start: CONTROL BAR */
+.mejs-container .mejs-controls {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+	height: 19px;
+	width: 100%;
+}
+.mejs-container .mejs-controls div {
+	list-style-type: none;
+	background-image: none;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 17px;
+	font-size: 11px;
+	line-height: 11px;
+	background: 0;
+	font-family: 'Helvetica Neue', HelveticaNeue-Light, sans-serif;
+	border: 0;
+}
+
+.mejs-controls .mejs-button button {
+	cursor: pointer;
+	display: block;
+	font-size: 0px;
+	line-height: 0;
+	text-decoration: none;
+	padding: 0;
+	position: absolute;
+	border: 0;
+	margin: 0;
+	background: transparent 0 0 no-repeat;
+}
+/* End: CONTROL BAR */
+
+/* Start: Progress bar */
+.
+.mejs-controls div.mejs-time-rail {
+	height: 35px;
+	width: 960px;
+}
+.mejs-controls .mejs-time-rail span {
+	display: block;
+	position: absolute;
+	width: 180px;
+	height: 3px;
+	cursor: pointer;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	margin: 16px 0 ;
+	background: #333;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #7f7769;
+	width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	width: 0;
+	background: #e21217;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 10px;
+	background: #fff;
+
+	cursor: pointer;
+	border: solid 2px #333;
+	top: -2px;
+	text-align: center;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float {
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	background: #eee;
+	width: 36px;
+	height: 17px;
+	border: solid 1px #333;
+	top: -26px;
+	margin-left: -18px;
+	text-align: center;
+	color: #111;
+}
+.mejs-controls .mejs-time-rail:hover .mejs-time-float {
+	visibility: visible;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+	margin: 2px;
+	width: 30px;
+	display: block;
+	text-align: center;
+	left: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: solid 5px #eee;
+	border-color: #eee transparent transparent transparent;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	top: 15px;
+	left: 13px;
+
+}
+
+.mejs-controls .mejs-time .mejs-currenttime {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	
+	font-weight: 100;
+	color: #fff;
+
+	letter-spacing: 1px;
+
+}
+
+.mejs-controls .mejs-time .mejs-currenttime:after {
+	content: '|';
+	color: #fff;
+
+	margin: 0 0 0 5px;
+}
+
+.mejs-controls .mejs-time .mejs-duration {
+	position: absolute;
+	bottom: 10px;
+	left: 55px;
+	
+	font-weight: 100;
+	color: #fff;
+
+	letter-spacing: 1px;
+
+}
+/* End: Progress bar */
+
+/* Start: Fullscreen */
+
+.mejs-container .mejs-controls .mejs-fullscreen-button {
+	cursor: pointer;
+}
+.mejs-container .mejs-controls .mejs-fullscreen-button button {
+	background-size: 100%;
+	background-image: url('../media/img/fullscreen.png');
+
+	width: 20px;
+	height: 15px;
+
+	position: absolute;
+	
+	bottom: 11px;
+	right: 10px;
+}
+
+/* Retina optim */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.mejs-container .mejs-controls .mejs-fullscreen-button button {
+		background-image: url('../media/img/fullscreen@2x.png');
+	}
+
+	.mejs-overlay-button {
+		background-image: url('../media/img/play@2x.png');
+	}
+}
+/* End: Fullscreen */
