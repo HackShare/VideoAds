@@ -1,5 +1,5 @@
 /**
-*** VideoAds.js - HTML5 & JavaScript Video Adventisment plugin for MediaElements.js
+*** VideoAds.js - HTML5 & JavaScript Video Advertising plugin for MediaElements.js
 *** Author: Kamil Czujowski (https://twitter.com/kamilczujowski), Sergej Müller (http://wpcoder.de)
 *** Version: 1.0
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.

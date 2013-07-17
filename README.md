@@ -1,6 +1,6 @@
 VideoAds.js
 <br />
-**HTML5 &amp; JavaScript Video Adventisment plugin for MediaElements.js**
+**HTML5 &amp; JavaScript Video Advertising plugin for MediaElements.js**
 
 ##### [See VideoAds.js example](http://kamilczujowski.github.io/VideoAds)
 
@@ -29,7 +29,7 @@ VideoAds.js
     ```
 You can change the ID's for your AD
 <br />
-Default ID for the first advertisment is **'#ad1'**
+Default ID for the first Advertising is **'#ad1'**
 
 3. Insert the following code right after the ```<body>```-tag
 
@@ -41,7 +41,7 @@ Default ID for the first advertisment is **'#ad1'**
     </video>
     ```
 
-4. Insert the advertisment DIV after the ```</video>```-tag
+4. Insert the Advertising DIV after the ```</video>```-tag
     ```html
     <div class="ads" id="ad1" data-enable-time="1" data-disable-time="30">
         Your AD comes here
@@ -61,9 +61,9 @@ Default ID for the first advertisment is **'#ad1'**
 ## Controlling:
 To show and hide the advertiment in your video please use the follow  ```data```-elements:
 <br />
-Show your advertisment at 00:01: ```data-enable-time="1"```
+Show your Advertising at 00:01: ```data-enable-time="1"```
 <br />
-Hide your advertisment at 00:30: ```data-disable-time="30"```
+Hide your Advertising at 00:30: ```data-disable-time="30"```
 
 
 ## Changelog
