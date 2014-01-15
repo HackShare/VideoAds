@@ -70,7 +70,7 @@ Hide your Advertising at 00:30: ```data-disable-time="30"```
 No changes till now
 
 ## Copyright
-Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
+Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski)
 <br />
 © 2013 Hamburg, Germany
 <br /> 
