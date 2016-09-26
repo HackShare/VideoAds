@@ -1,4 +1,4 @@
-<strong>This plugin is no longer maintained</strong><br />
+<strong>This plugin is no longer maintained</strong><br /><br />
 VideoAds.js
 <br />
 **HTML5 &amp; JavaScript Video Advertising plugin for MediaElements.js**
